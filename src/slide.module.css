@@ -1,0 +1,29 @@
+.container {
+  /* overflow hidden para não criar uma barra vertical */
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.item {
+  /* esse flex-shrink eh para ele ficar do tamanho que eu pedi, para o display flex não influenciar nele */
+  flex-shrink: 0;
+  /* width de 80% para ocupar sempre 80% da tela */
+  width: 80%;
+  margin: 0 10%;
+  padding: 10rem 0;
+  background: #eee;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.nav {
+  /* display flex para poder usar o justify-content com space-between para ficar um em cada lado da tela */
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto;
+  width: 80%;
+}
